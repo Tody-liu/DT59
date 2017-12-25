@@ -24,22 +24,22 @@ public class VipCard {
     // 通过输入，获取卡片等级信息
     String getCardInfo(int input) {
         if (input == 1) {
-            System.out.println("您的卡片是至尊级!");
+            // System.out.println("您的卡片是至尊级!");
             return "至尊级";
         } else if (input == 2) {
-            System.out.println("您的卡片是钻石级!");
+            // System.out.println("您的卡片是钻石级!");
             return "钻石级";
         } else if (input == 3) {
-            System.out.println("您的卡片是铂金级!");
+            // System.out.println("您的卡片是铂金级!");
             return "铂金级";
         } else if (input == 4) {
-            System.out.println("您的卡片是黄金级!");
+            // System.out.println("您的卡片是黄金级!");
             return "黄金级";
         } else if (input == 5) {
-            System.out.println("您的卡片是白银级!");
+            // System.out.println("您的卡片是白银级!");
             return "白银级";
         } else {
-            System.out.println("您输入的信息有误");
+            // System.out.println("您输入的信息有误");
             return null;
         }
     }
@@ -70,6 +70,8 @@ public class VipCard {
         // 将a作为实参，传入getCardInfo()方法中，返回String类型的b
         String b = vc.getCardInfo(a);
         // System.out.println(b);
+        // 显示顾客卡片等级
+        System.out.println("您的卡片的级别是： " + b);
         System.out.print("请输入消费金额： ");
         double expend = sc.nextDouble();
         // 将从getCardInfo()方法中获取到的值，作为实参传入getBalance()方法中，从而获得最后的结算金额
